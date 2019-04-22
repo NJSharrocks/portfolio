@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google font for styling purposes and linking to the stylesheet.css-->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Absence Calculator</title>
+</head>
+<body>
+  <!--declares the start of the form-->
+  <form id="absence-form">
+    <div class="input">
+      <!--title across the top of the calculator-->
+      <div id="title">Absence Calculator</div>
+      <!--id given in order to style and add maths in JS file-->
+      <div id="firstCell">
+        <!--label instructing the user-->
+        <div id="instruct">
+          Enter number of employees:
+        </div>
+        <!--defines the input cell-->
+        <input id="employees" type="text" name="employees">
+
+          <!--the second cell container is created and a label added-->
+          <div id="secondCell">
+            <div id="instruct">
+              Enter average salary:
+            </div>
+          </div>
+          <input id="salary" type="text" name="salary">
+
+          <!--and the third cell is created the same way-->
+          <div id="thirdCell">
+            <div id="instruct">
+              Enter absence %:
+            </div>
+          </div>
+          <!--this final input box includes the "onchange.." item which calls
+          the multiply() function from the absenceCalc.js document-->
+          <input id="absence" type="text" name="absence">
+      </div>
+
+      <!--The div for the output is created-->
+      <div id="instruct">
+        <div id="output">Total salary (£):
+        <div id="totalSalary">
+        </div></div>
+          <div id="output">Monthly absence cost (£):
+          <span id="monthlyAbsence">
+        </span></div>
+        <div id="output">Annual absence cost (£):
+        <span id="absenceCost">
+        </span></div>
+      </div>
+  </div>
+</form>
+<!--linking the javascript file-->
+<script src="absenceCalc.js"></script>
+</body>
+</html>
