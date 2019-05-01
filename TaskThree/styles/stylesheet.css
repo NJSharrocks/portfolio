@@ -1,9 +1,11 @@
 /*Styling the entire webpage, including no margin and font-style*/
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Implementing a CSS Grid*/
@@ -24,6 +26,7 @@
   float: left;
 }
 
+/*Removing link underlines*/
 .noLinkStyle {
   text-decoration: none;
 }
@@ -40,7 +43,6 @@ the entire page, with a fixed height*/
   background-size: cover;
   height: 40vw;
 
-  width: 100%;
   position: relative;
 }
 
@@ -51,16 +53,17 @@ the entire page, with a fixed height*/
   bottom: 0;
   background-color: #13315C;
   width: 100%;
+  text-align: center;
 }
 
-
+/*Styles the banner*/
 .banner{
   width: 100%;
   display: inline-block;
   background-color: #13315C;
 
 }
-
+/*Fixes the width of the logo and adds padding*/
 .logo {
   width: 100px;
   position: absolute;
@@ -78,7 +81,7 @@ header{
 .header {
   color: white;
 }
-
+/*Styles font sizes for various heading types*/
 h1{
   font-size: 20pt;
 }
@@ -213,6 +216,7 @@ input{
   width: 40vw;
 }
 
+/*CSS styling for the slide presentation*/
 #message {
   height: 150px;
 }
@@ -230,6 +234,7 @@ input{
   clear: both;
   display: table;
 }
+
 
 .name {
   color: #7caeff;
@@ -253,6 +258,7 @@ p {
   padding: 1vw;
 }
 
+/*Responsive photo gallery*/
 #photos {
   line-height: 0;
 
@@ -274,6 +280,7 @@ p {
   width: 100%;
 }
 
+/*Creates the container for the contacts page*/
 .contactContainer {
   width: 100%;
   margin: 0;
@@ -282,6 +289,7 @@ p {
   text-align: center;
 }
 
+/*Styles the form on the contact page*/
 form {
   display: inline-block;
   margin-left: auto;
@@ -294,11 +302,13 @@ form {
   margin: 0 auto;
 }
 
+/*Centres the logos*/
 .logoCentre {
   width: 100%;
   text-align: center;
 }
 
+/*Responsive photo gallery setup*/
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;

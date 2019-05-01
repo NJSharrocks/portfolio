@@ -1,5 +1,4 @@
-/*Simple javascript function to add and remove the responsive
-element of the navigation*/
+/*Function to remove and add the responsive class for the navigation*/
 function navResponse() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
