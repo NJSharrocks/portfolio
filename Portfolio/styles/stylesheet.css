@@ -1,3 +1,4 @@
+/*Ensures no margin or padding throughout*/
 body
 {
   margin: 0;
@@ -5,6 +6,7 @@ body
 
 }
 
+/*Sets font, height and width of the web page*/
 html {
   box-sizing: border-box;
 	font-family: 'Signika', sans-serif;
@@ -12,6 +14,7 @@ html {
 	max-width: 100vw;
 }
 
+/*Creates a CSS Grid*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -29,6 +32,7 @@ html {
   float: left;
 }
 
+/*Sets the background image for the header and sets the sizes, font colour and positioning*/
 header {
 	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url("../images/self/6.jpg");
 	background-repeat: no-repeat;
@@ -40,36 +44,41 @@ header {
   position: relative;
 }
 
+/*styles font for part of the site*/
 .small {
   font-size: 12px;
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box
+}
 
-/* Slideshow container */
+/*Slideshow container to set positioning*/
 .slideshow-container {
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
+/*Hide the slide images*/
 .mySlides {
   display: none;
 }
 
+/*Ensures the slide images fit across the container and sets the size of the images*/
 .slideImage {
   object-fit: cover;
   width: 100%;
   height: 250px;
 }
 
+/*sets the background colour and font colour and sets a bottom margin*/
 .blackBG {
   background-color: black;
   color: white;
   margin-bottom: 20px;
 }
 
-/* Next & previous buttons */
+/*Next and previous buttons styling on the gallery slider*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -85,18 +94,18 @@ header {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/*Position the next button to the right of the slide gallery*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/*On hover of the previous and next buttons add a black background colour*/
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.7);
 }
 
-/* Caption text */
+/*Caption text styling for the slideshow*/
 .text {
   color: white;
   background-color: black;
@@ -108,7 +117,7 @@ header {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/*Number text to display what image the slideshow is on*/
 .numbertext {
   color: white;
   background-color: black;
@@ -118,7 +127,7 @@ header {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/*The circle indicators on the gallery*/
 .dot {
   cursor: pointer;
   height: 15px;
@@ -127,19 +136,19 @@ header {
   background-color: black;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.5s ease;
 }
 
 .active, .dot:hover {
   background-color: rgb(5,163,3);
 }
 
-/* Fading animation */
+/*Fading animation for different browsers*/
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
 }
 
 @-webkit-keyframes fade {
@@ -152,6 +161,7 @@ header {
   to {opacity: 1}
 }
 
+/*Styles various header types*/
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
@@ -161,7 +171,7 @@ h1, h2, h3 {
 h1 {
 	font-size: 3vw;
  }
-
+/*Creates title container */
  .title-container {
   font-size: 0;
   position: relative;
@@ -172,6 +182,7 @@ h2 {
 	font-size: 2vw;
 }
 
+/*Styles the avatar*/
 .avatar {
 	width: 25vw;
 	height: auto;
@@ -181,19 +192,20 @@ h2 {
 	margin-top: 25vw;
   z-index: 2;
 }
-
-.menuAvatar{
+/*Styles the menu avatar*/
+.menuAvatar {
 	width: 20vw;
 	border-radius: 100vw;
 	margin: auto;
 	display: block;
 }
 
+/*Styles some text*/
 .green {
 	color: rgb(5, 163, 3);
 }
 
-
+/*Styles links throughout*/
 a
 {
   text-decoration: none;
@@ -206,6 +218,7 @@ a:hover
   color: rgb(5, 163, 3);
 }
 
+/*Styles the menu toggle button*/
 #menuToggle
 {
   display: block;
@@ -236,9 +249,7 @@ a:hover
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+/*Styles the hamburger icon*/
 #menuToggle span
 {
   display: block;
@@ -330,17 +341,20 @@ a:hover
 	font-size: 22px;
 }
 
+/*H3 styling*/
 h3 {
   text-align: left;
   font-size: 18px;
   color: rgb(5, 163, 3);
 }
 
+/*Column text styling*/
 .colText {
   margin: 10px;
   font-size: 12px;
 }
 
+/*Styles the background of certain sections*/
 .sectBG {
   width: 100%;
   padding: 0;
@@ -350,6 +364,7 @@ h3 {
   text-align: center;
 }
 
+/*Styles some text sections*/
 .greenOnGreen {
   width: 100%;
   padding: 0;
@@ -360,10 +375,12 @@ h3 {
   height: 10px;
 }
 
+/*Adds margin to selected sections*/
 .padBott {
   margin-bottom: 10px;
 }
 
+/*Creates a wrap container to hold a website within the portfolio site*/
 .wrap {
     overflow: hidden;
     margin: 10px;
@@ -371,6 +388,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+
 .box {
     float: left;
     position: relative;
@@ -418,6 +436,7 @@ h3 {
     padding-bottom: 100%;
   }
 
+/*Styles the header for each page except the index*/
 .pagesHeader {
   height: 30px;
   width: 100%;
@@ -425,6 +444,7 @@ h3 {
   background-image: linear-gradient(#006494, #006494);
 }
 
+/*Styles a section on the absence calculator page*/
 .absenceSect {
   padding-top: 10px;
   padding-left: 5px;
@@ -433,6 +453,7 @@ h3 {
 
 }
 
+/*Styles a section on the Romans branding page*/
 .romansSect {
   font-size: 9pt;
   line-height: 1.2;
@@ -441,10 +462,12 @@ h3 {
   overflow: auto;
 }
 
+/*Right align some text*/
 .rightAlign {
   text-align: right;
 }
 
+/*Styles the back button for pages*/
 .backButton {
   font-size: 20px;
   padding-left: 10px;
@@ -457,15 +480,12 @@ h3 {
   color: #7caeff;
 }
 
+/*Styles some text blue*/
 .blue {
   color: #006494;
 }
 
-.sideArrow {
-  font-size: 36pt;
-  padding-top: 60px;
-}
-
+/*Styles the code scrolling box to ensure the code is contained within a scrollable box*/
 .CodeScroll {
   width: 100%;
   padding-bottom: 10px;
@@ -492,6 +512,7 @@ h3 {
   padding: 5px;
 }
 
+/*Styles the scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -508,6 +529,7 @@ h3 {
   background: #555;
 }
 
+/*Sets the iframe dimensions to host the doggie walks page within the portfolio page*/
 .iFrameDiv
 {
     width    : 320px;
@@ -537,57 +559,7 @@ h3 {
   font-family: 'Signika', sans-serif;
 }
 
-.card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 300px;
-    height: 400px;
-    background: #262626;
-    overflow: hidden;
-}
-.card .imgBx,
-.card .details {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    box-sizing: border-box;
-    transition: .5s;
-}
-.card .imgBx {
-    top: 0;
-    left: 0;
-}
-.card:hover .imgBx {
-    top: 0;
-    left: -100%;
-}
-.card .imgBx img {
-    width: 100%;
-}
-.card .details {
-    background: #262626;
-    top: 0;
-    left: 100%;
-    padding: 60px 30px;
-}
-.card:hover .details {
-    top: 0;
-    left: 0%;
-}
-.card .details h2 {
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0 0 10px;
-    border-bottom: 2px solid #fff;
-
-}
-.card .details p {
-    margin: 20px 0 0;
-    color: #fff;
-}
+/*Changes certain elements depending on browser size*/
 @media only screen and (max-width:650px) and (min-width:481px) {
     /* Tablet view: 2 tiles */
     .box {

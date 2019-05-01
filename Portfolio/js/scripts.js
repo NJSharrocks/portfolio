@@ -1,16 +1,18 @@
+//Shows slide index and allows changing of slide images
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+//creates the ability to scroll through slides
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+//controls the slide gallery image
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//function to control the image shown on the slideshow gallery
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
