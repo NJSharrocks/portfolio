@@ -308,6 +308,13 @@ form {
   text-align: center;
 }
 
+.orangeBG {
+  background-color: #EB7859;
+  color: white;
+  top: 0;
+  text-align: center;
+}
+
 /*Responsive photo gallery setup*/
 @media (max-width: 1200px) {
   #photos {
