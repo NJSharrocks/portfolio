@@ -1,3 +1,5 @@
+/*Creates the standard font family for the entire page whilst resetting the page padding and margin to 0.
+It also sets a max width off 100% so that the page is not stretched.*/
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +7,8 @@
   max-width: 100%;
 }
 
+/*The header is styled with white font, black background and a thin, light grey bottom border. The width
+is stretched to 100% to ensure the black background goes all the way across the page*/
 header {
   color: white;
   background-color: black;
@@ -12,68 +16,86 @@ header {
   border-bottom: 2px solid lightgrey;
 }
 
+/*The font size for all h1 elements throughout the site is set, with a bold font set
+and padding added*/
 h1 {
   font-size: 1.7em;
   font-family: 'Fjalla One', sans-serif;
   padding: 5px 5px 0;
 }
 
+/*Size and padding added to h2 elements*/
 h2 {
   font-size: 1em;
   padding: 0 5px 0;
-
 }
 
+/*The logo is styled to ensure the font colour is white, with some padding to ensure the logo
+sits away from the edge of the browser*/
 .logo {
   padding-left: 10px;
   color: white;
 }
 
+/*The green span element of h1 is given the same font as the rest of the h1 element*/
 h1 .green {
   font-family: 'Fjalla One', sans-serif;
 }
 
+/*The colour is changed for all spans with the 'green' class*/
 .green {
   color: green;
 }
+
+/*The container is given a flex display style to split the two elements to each side of the page*/
 .container {
   display: flex;
   justify-content: space-between;
 }
 
+/*The rightElements div is split using a block display and pushed to the right of the page*/
 .rightElements {
   display: block;
   text-align: right;
   padding-right: 10px;
   margin-top: auto;
 }
+
+/*Right aligned navigation menu*/
 .mobileNavMenu {
   text-align: right;
 }
 
+/*An inline block navigation menu*/
 .mobileNavMenu li {
   display: inline-block;
 
 }
 
+/*Pushes the social media buttons to the right of the page and gives it a padding*/
 .socialMediaButtons {
   margin-left: auto;
   padding-bottom: 10px;
 }
 
+/*inline block so the social media buttons line up next to each other*/
 .socialMediaButtons li {
   display: inline-block;
 }
 
+/*ensures all links are white in colour with no underline*/
 a {
   color: white;
   text-decoration: none;
 }
 
+/*ensures all links turn green on hover*/
 a:hover {
   color: green;
 }
 
+/*The avatar section of the site is given a black background, a set height and padding throughout.
+The overflox is also hidden to ensure the page isn't stretched.*/
 .avatarSect {
   background-color: black;
   padding: 20px;
@@ -81,6 +103,7 @@ a:hover {
   overflow: hidden;
 }
 
+/*The avatar is made into a circle and pushed to the right of the page.*/
 .avatar {
   border-radius: 100%;
   display: block;
@@ -89,19 +112,24 @@ a:hover {
   width: 75%;
 }
 
+/*Adds padding throughout the page*/
 section {
   padding: 10px;
 }
 
+/*adds a black background and white font to the selected elements*/
 .blackSect {
   background-color: black;
   color: white;
 }
 
+/*Ensures the h3 elements are given a green font colour*/
 h3 {
   color: green;
 }
 
+/*Portfolio image elements are given a set height and width. The object fit and position ensure the
+image isn't stretched no matter the size of it*/
 .portfolioImage {
   height: 100px;
   width: 150px;
@@ -109,10 +137,12 @@ h3 {
   object-position: top;
 }
 
+/*Gives a set width to the titleText element*/
 .titleText {
   width: 450px;
 }
 
+/*styles the footer*/
 footer {
   background-color: black;
   color: white;
@@ -120,6 +150,7 @@ footer {
   font-size: 0.8em;
 }
 
+/*pushes the footer elements to each side of the footer*/
 .footerFlex {
   width: 100%;
   display: flex;
@@ -183,6 +214,7 @@ pages*/
   transform: scale(1.1);
 }
 
+/*makes the links in the highlighted sections black and turn green on hover*/
 .blackText a {
   color: black;
 }
@@ -191,6 +223,7 @@ pages*/
   color: green;
 }
 
+/*styles the Romans logo on the design page*/
 .romansLogo {
   display: block;
   margin-left: auto;
@@ -199,6 +232,7 @@ pages*/
   float: right;
 }
 
+/*centre aligns the selected elements, giving it a black background colour, white font and padding*/
 .centreAlign {
   text-align: center;
   background-color: black;
@@ -206,14 +240,17 @@ pages*/
   padding: 10px;
 }
 
+/*styles the down arrow*/
 .downArrow {
   font-size: 30px;
 }
 
+/*adds padding to the romans images*/
 .romansImage {
   padding-top: 10px;
 }
 
+/*styles the codepen style code boxes on the absence calculator page*/
 .CodeScroll {
   max-width: 100%;
   padding-bottom: 10px;
@@ -240,6 +277,7 @@ pages*/
   padding: 5px;
 }
 
+/*sets a size for the absence section*/
 .absenceSect {
   padding-top: 10px;
   padding-left: 5px;
@@ -248,6 +286,7 @@ pages*/
 
 }
 
+/*ensures that these sections do not display when in mobile view*/
 .backgroundImage {
   display: none;
 }
@@ -256,12 +295,14 @@ pages*/
   display: none;
 }
 
+/*Sets new display settings for tablet size screen*/
 @media only screen and (min-width:376px) and (max-width: 854px) {
+    /*sets the sectFlex to flex display*/
     .sectFlex {
       display: flex;
       justify-content: space-between;
     }
-
+    /*pushes the column element to three across the page*/
     .column {
       width: 33%;
       display: inline-block;
@@ -270,17 +311,19 @@ pages*/
     }
   }
 
+/*sets new css for desktop computer*/
 @media only screen and (min-width: 855px) {
   header {
     height: 80px;
     border-style: none;
   }
 
+/*sets a grid display to three equal columns*/
  .grid {
    display: grid;
    grid-template-columns: 33% 33% 33%;
  }
-
+/*sets a grid display to three unequal columns to help shape the S-shape of the text*/
   .grid-2 {
     display: grid;
     grid-template-columns: 38% 42% 20%;
@@ -297,19 +340,22 @@ pages*/
     border-top: 2px solid lightgrey;
   }
 
+/*pushes the image to the edges of the div but ensures it doesn't stretch or skew*/
 .sectFlex img {
   width: 100%;
   height: 100%;
   padding-left: 10px;
   object-position: center;
-
 }
 
+/*Styles the logo*/
   .logo {
     height: 80px;
     color: black;
     background-color: white;
   }
+
+  /*pushes the avatar to the right*/
   .avatar {
     margin-left: auto;
     margin-right: -96px;
@@ -317,12 +363,12 @@ pages*/
     width: 84%;
     z-index: 1;
   }
-  .curvedElement {
 
-  }
   .avatarSect {
     padding: 0%;
   }
+
+  /*ensures the background image now shows, which helps to shape the S*/
   .backgroundImage {
     display: grid;
     margin-left: -86px;
@@ -333,19 +379,25 @@ pages*/
     z-index: 0;
   }
 
+/*pushes the leftDiv element over other elements*/
   .leftDiv {
     z-index: 1;
   }
+
+  /*shows the leftCircle element and sets the size*/
   .leftCircle {
     display: grid;
     height: 280px;
   }
+
+  /*makes the leftCurve visible and sets the size*/
   .leftCurve {
     display: grid;
     height: 80px;
     margin-left: -10px;
   }
 
+/*sets the size and padding of the sections*/
   .workHistory {
     height: 100px;
     padding-top: 20px;
@@ -360,6 +412,7 @@ pages*/
     padding-top: 50px;
   }
 
+/*sets the visibility, size and shape of the shapes to shape the S*/
   .middleCurve {
     display: grid;
     float: left;
@@ -391,6 +444,7 @@ pages*/
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 95% 6%, 87% 12%, 80% 17%, 74% 23%, 64% 30%, 57% 37%, 48% 48%, 38% 56%, 23% 73%, 14% 82%, 7% 91%);
   }
 
+/*styles parts of the portfolio grid section*/
   .blackSect {
     background-color: white;
   }
@@ -401,6 +455,7 @@ pages*/
     color: green;
   }
 
+/*Adds padding*/
   .socialMediaButtons a {
     padding-left: 10px;
   }
@@ -410,13 +465,16 @@ pages*/
 
   }
   .centreAlign {
-    text-align: 30px;
+    text-align: center;
+    font-size: 30px;
   }
 
+/*sets font size of the down arrow*/
   .downArrow {
     font-size: 60px;
   }
 
+/*sets the column width for the portfolio page*/
   .column {
     width: 30%;
 
