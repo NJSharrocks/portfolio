@@ -1,0 +1,14 @@
+* {
+  max-width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+html {
+  max-width: 1000px;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+}

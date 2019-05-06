@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Imports stylesheets-->
-  <link rel="stylesheet" href="styles/stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/stylesheetCalc.css">
-	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+	<link rel="stylesheet" href="styles/stylesheet2.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>NJSharrocks | Absence Calculator</title>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <title>NJSharrocks</title>
 </head>
 <body>
-  <!--creates simple header with link back to main page-->
-  <header class="pagesHeader">
-    <a class="backButton" href="index.html">< NJSharrocks</a>
+  <header>
+    <div class="container">
+      <a href="index.html">
+				<div class="pagesLogo">
+        	<h1>Nathan <span class="green">James</span> Sharrocks</h1>
+        	<h2>Web Development <span class="green">|</span> Research</h2>
+        	<h2><span class="green">Conservation</span> through Web Tech</h2>
+      	</div>
+			</a>
+      <div class="rightElements">
+        <div class="socialMediaButtons">
+          <ul>
+            <li class="menuItem"><a href="https://www.linkedin.com/in/njsharrocks/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+            <li class="menuItem"><a href="https://github.com/NJSharrocks"><i class="fab fa-github fa-fw"></i></a></li>
+            <li class="menuItem"><a href="https://dribbble.com/NJSharrocks"><i class="fab fa-dribbble"></i></a></li>
+            <li class="menuItem"><a href="https://codepen.io/NJSharrocks"><i class="fab fa-codepen"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="mobileNavMenu">
+          <ul>
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li class="menuItem"><a href="portfolio.html">Portfolio</a></li>
+            <li>|</li>
+            <li class="menuItem"><a href="https://dribbble.com/NJSharrocks">Contact</a></li>
+            <li>|</li>
+            <li class="menuItem"><a href="https://codepen.io/NJSharrocks">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
-  <h1>The Build...</h1>
+  <h1>Absence Calculator</h1>
+  <section>
+  <p>A JavaScript application to work out the total that absences are costing a company. This was an industry-style brief
+    given by the Nutterson's company as part of the third year of my BSc Web Design and Development degree</p>
+  </section>
+  <h2>The Build...</h2>
   <!--adds absence calculator form-->
   <section class="absenceSect">
+    <p>Produced using a standard HTML5 form with JavaScript functions to work the maths, which work live as the number are entered
+      into the input boxes. Styled using CSS3 with the ability to style to any company branding.</p>
     <form class="absence-form">
       <div class="input">
         <div id="title">Absence Calculator</div>
@@ -55,9 +94,9 @@
   </form>
   </section>
   <!--section adds the working code into scrollboxes-->
-  <h1>The Code...</h1>
-  <section class="CodeScroll col-12">
-    <div class="scrollbox col-4">
+  <h2>The Code...</h2>
+  <section class="CodeScroll">
+    <div class="scrollbox">
       <div class="scrollboxTitle">HTML</div>
       <div class="scrollboxCode">
         &lt;!DOCTYPE html&gt; <br>
@@ -124,7 +163,7 @@
         &lt;/html&gt; <br>
       </div>
     </div>
-    <div class="scrollbox col-4">
+    <div class="scrollbox">
       <div class="scrollboxTitle">CSS</div>
       <div class="scrollboxCode">
         body
@@ -285,13 +324,13 @@
           to { <br>opacity: 1<br> } <br>
         <br> } <br>
 
-        h1, h2, h3 { <br>
+        h2, h2, h3 { <br>
         	margin: 0;
         	padding: 0;
         	text-align: center;
         <br> } <br>
 
-        h1 { <br>
+        h2 { <br>
         	font-size: 3vw;
          <br> } <br>
 
@@ -655,7 +694,7 @@
         		width: 15vw;
         	<br> } <br>
 
-        	h1 { <br>
+        	h2 { <br>
         		font-size: 2vw;
         	<br> } <br>
 
@@ -669,7 +708,7 @@
 
       </div>
     </div>
-    <div class="scrollbox col-4">
+    <div class="scrollbox">
       <div class="scrollboxTitle">JS</div>
       <div class="scrollboxCode">
         var inputs = document.getElementsByTagName('input')
@@ -697,26 +736,28 @@
     </div>
   </section>
   <!--adds the website examples with the absence calculator included-->
-  <h1>The Styling...</h1>
+  <h2>The Styling...</h2>
   <section>
-    <div class="box boxTwo">
-      <div class="boxInner">
-        <img src="images/siteOne.jpg"/>
-      </div>
-    </div>
-    <div class="box boxTwo">
-      <div class="boxInner">
-        <img src="images/siteTwo.jpg"/>
-      </div>
-    </div>
-    <div class="box boxTwo">
-      <div class="boxInner">
-        <img src="images/siteThree.jpg"/>
-      </div>
-    </div>
+    <img src="images/siteOne.jpg"/>
+    <p class="downArrow centreAlign">&#8681;</p>
+    <p class="centreAlign">Can be resized to fit in any part of a corporate website.</p>
+    <img src="images/siteTwo.jpg"/>
+    <p class="downArrow centreAlign">&#8681;</p>
+    <p class="centreAlign">Colours and fonts can be matched to any corporate brand.</p>
+    <img src="images/siteThree.jpg"/>
   </section>
 
   <script src="js/absenceCalc.js"></script>
 
 </body>
+<footer>
+	<div class="footerFlex">
+	  <div>
+	    <p class="green">Available for hire.</p>
+	    <p>Manchester-based, willing to travel</p>
+	  </div>
+	  <p>&copy; 2019 Nathan James Sharrocks</p>
+	</div>
+</footer>
+
 </html>

@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles/stylesheet.css">
-  <link rel="stylesheet" href="dog/styles/stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+	<link rel="stylesheet" href="styles/stylesheet2.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="js/scripts.js"></script>
-  <title>NJSharrocks | Chester Romans Branding</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <title>NJSharrocks</title>
 </head>
 <body>
-  <header class="pagesHeader">
-    <a class="backButton" href="index.html">< NJSharrocks</a>
+  <header>
+    <div class="container">
+      <a href="index.html">
+				<div class="pagesLogo">
+        	<h1>Nathan <span class="green">James</span> Sharrocks</h1>
+        	<h2>Web Development <span class="green">|</span> Research</h2>
+        	<h2><span class="green">Conservation</span> through Web Tech</h2>
+      	</div>
+			</a>
+      <div class="rightElements">
+        <div class="socialMediaButtons">
+          <ul>
+            <li class="menuItem"><a href="https://www.linkedin.com/in/njsharrocks/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+            <li class="menuItem"><a href="https://github.com/NJSharrocks"><i class="fab fa-github fa-fw"></i></a></li>
+            <li class="menuItem"><a href="https://dribbble.com/NJSharrocks"><i class="fab fa-dribbble"></i></a></li>
+            <li class="menuItem"><a href="https://codepen.io/NJSharrocks"><i class="fab fa-codepen"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="mobileNavMenu">
+          <ul>
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li class="menuItem"><a href="portfolio.html">Portfolio</a></li>
+            <li>|</li>
+            <li class="menuItem"><a href="https://dribbble.com/NJSharrocks">Contact</a></li>
+            <li>|</li>
+            <li class="menuItem"><a href="https://codepen.io/NJSharrocks">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
+  <h1>Chester Romans Rebranding</h1>
   <!--text section with the given brief-->
-  <h1>The Specs...</h1>
+  <h2>The Specs...</h2>
   <section>
-    <p class="col-4 romansSect">
+    <img class="romansLogo" src="images/design/romans.jpg">
+    <p>
       The Chester Romans American Football team are one of the oldest in the British American
       Football National Leagues, dating back to 1986. However, this season they decided to
       undergo a brand refresh, changing their team colours from red and black to red and white,
@@ -26,8 +60,10 @@
       was required along with a reworking of their sponsor's logo (with permission from the
       sponsor) to fit with the new kit.
     </p>
-    <img class="romansSect col-4" src="images/design/romans.jpg">
-    <p class="col-4 romansSect rightAlign">
+  </section>
+  <h2>The Designs...</h2>
+  <section>
+    <p>
       As a joint academy with youth, junior and senior teams, it was important to join the teams
       together on promo material advertising fixtures for their social media platforms but also
       tie in the differences. Therefore bold colours, matching each team's kit colours but also
@@ -35,24 +71,44 @@
       bold fonts, as well as using the supplied slogan created a brand that can be stuck to going
       forwards.
     </p>
-  </section>
-  <!--Gallery images to show the branding created-->
-  <section class="col-12">
-    <h1>The Designs...</h1>
-    <div id="photos">
-      <img class="box" src="images/design/CoverFixtures.png">
-      <img class="box" src="images/design/PLAYOFFS.png">
-      <img class="box" src="images/design/Fixtures.png">
-      <img class="box" src="images/design/Oversized2.png">
-      <img class="box" src="images/design/PLAYOFFSsemi.png">
-      <img class="box" src="images/design/Squire.png">
-      <img class="box" src="images/design/RookieRecruiting.png">
-      <img class="box" src="images/design/Hickorys.png">
-      <img class="box" src="images/design/PLAYOFFSfinal.png">
-      <img class="box" src="images/design/HickorysBack.png">
+    <div class="romansImageContainer">
+      <img class="romansImage" src="images/design/CoverFixtures.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Colour scheme matched throughout with the new kit colours for the three teams.</p>
+      <img class="romansImage" src="images/design/PLAYOFFS.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Clean, minimal font use. Concise and communicates necessary information.</p>
+      <img class="romansImage" src="images/design/Fixtures.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Strong imagery highlighting the players at the heart of the club.</p>
+      <img class="romansImage" src="images/design/Oversized2.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Kit designs produced as well as promotional material.</p>
+      <img class="romansImage" src="images/design/PLAYOFFSsemi.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Clean, white background offers a strong contrast for the posters, making the information pop.</p>
+      <img class="romansImage" src="images/design/Squire.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Senior, junior and youth teams sectioned but grouped together to show the club's different teams but family attitude.</p>
+      <img class="romansImage" src="images/design/RookieRecruiting.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Adoption of the team slogan.</p>
+      <img class="romansImage" src="images/design/Hickorys.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Redesign of the sponsor's logo to match the team brand.</p>
+      <img class="romansImage" src="images/design/PLAYOFFSfinal.png">
+      <p class="downArrow centreAlign">&#8681;</p>
+      <p class="centreAlign">Further sponsorship re-working for kit patches.</p>
+      <img class="romansImage" src="images/design/HickorysBack.png">
     </div>
   </section>
-
-
 </body>
-</html>
+<footer>
+	<div class="footerFlex">
+	  <div>
+	    <p class="green">Available for hire.</p>
+	    <p>Manchester-based, willing to travel</p>
+	  </div>
+	  <p>&copy; 2019 Nathan James Sharrocks</p>
+	</div>
+</footer>
