@@ -137,6 +137,16 @@ image isn't stretched no matter the size of it*/
   object-position: top;
 }
 
+.portfolioImage2 {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /*Gives a set width to the titleText element*/
 .titleText {
   width: 450px;
@@ -334,6 +344,13 @@ pages*/
     grid-template-columns: 30% 45% 25%;
   }
 
+  .grid-4 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    border-top: 2px solid lightgrey;
+  }
+
   .sectFlex {
     display: grid;
     grid-template-columns: 20% 30% 50%;
@@ -478,6 +495,12 @@ pages*/
   .column {
     width: 30%;
 
+  }
+  .portfolioImage2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
 }
